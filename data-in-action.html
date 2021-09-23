@@ -152,8 +152,8 @@
             document.querySelector("#second-internal-title").innerText = data.second_internal_app.title
             document.querySelector("#second-internal-pub").innerText = data.second_internal_app.publisher
             document.querySelector("#second-internal-desc").innerText = data.second_internal_app.description
-            document.querySelector("#second-internal-img").src = data.first_internal_app.img_link
-            document.querySelector("#second-internal-hyper").href = data.first_internal_app.hyperlink
+            document.querySelector("#second-internal-img").src = data.second_internal_app.img_link
+            document.querySelector("#second-internal-hyper").href = data.second_internal_app.hyperlink
             
             document.querySelector("#first-external-title").innerText = data.first_external_app.title
             document.querySelector("#first-external-pub").innerText = data.first_external_app.publisher
@@ -197,7 +197,7 @@
 
 <div class = "internal-apps">
     <div class="first-internal-app">
-        <a id="first-internal-hyper">
+        <a id="first-internal-hyper" target="_blank" rel="noopener noreferrer">
             <img id="first-internal-img" alt="hhs logo" class="internal-app-image">
         </a>
         <h3 id="first-internal-title"></h3>
@@ -207,7 +207,7 @@
         <p id="first-internal-desc"></p>
     </div> 
     <div class="second-internal-app">
-        <a id="second-internal-hyper">
+        <a id="second-internal-hyper" target="_blank" rel="noopener noreferrer">
             <img id="second-internal-img" alt="hhs logo" class="internal-app-image">
         </a>
         <h3 id="second-internal-title"></h3>
@@ -219,7 +219,7 @@
 </div>
 <div class='external-apps'>
     <div class='first-external-app'>
-        <a id="first-external-hyper">
+        <a id="first-external-hyper" target="_blank" rel="noopener noreferrer">
             <img id="first-external-img" alt="hhs logo" class="external-app-image">
         </a>
         <h3 id="first-external-title"></h3>
@@ -229,7 +229,7 @@
         <p id="first-external-desc"></p>
     </div>
     <div class='second-external-app'>
-        <a id="second-external-hyper">
+        <a id="second-external-hyper" target="_blank" rel="noopener noreferrer">
             <img id="second-external-img" alt="hhs logo" class="external-app-image">
         </a>
         <h3 id="second-external-title"></h3>
@@ -239,7 +239,7 @@
         <p id="second-external-desc"></p>
     </div>
     <div class='third-external-app'>
-        <a id="third-external-hyper">
+        <a id="third-external-hyper" target="_blank" rel="noopener noreferrer">
             <img id="third-external-img" alt="hhs logo" class="external-app-image">
         </a>
         <h3 id="third-external-title"></h3>
