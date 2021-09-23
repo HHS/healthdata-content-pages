@@ -22,7 +22,7 @@
     },
     "second_external_app": {
         "title": "NYT Covid Tracker",
-        "publisher": "New York Times",
+        "publisher": "New York Times (NYT)",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae, at debitis alias non, saepe itaque praesentium illum rem perspiciatis commodi.",
         "img-link": "https://static01.nyt.com/images/2021/04/01/multimedia/VIRUS-REDESIGN-03/VIRUS-REDESIGN-03-jumbo-v2.png?quality=90&auto=webp",
         "hyperlink": "https://www.click2houston.com/news/local/2020/04/30/map-track-coronavirus-infection-rates-per-capita-county-by-county/"
