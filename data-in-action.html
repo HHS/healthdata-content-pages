@@ -146,19 +146,33 @@
             document.querySelector("#first-internal-title").innerText = data.first_internal_app.title
             document.querySelector("#first-internal-pub").innerText = data.first_internal_app.publisher
             document.querySelector("#first-internal-desc").innerText = data.first_internal_app.description
+            document.querySelector("#first-internal-img").src = data.first_internal_app.img_link
+            document.querySelector("#first-internal-hyper").href = data.first_internal_app.hyperlink
+
             document.querySelector("#second-internal-title").innerText = data.second_internal_app.title
             document.querySelector("#second-internal-pub").innerText = data.second_internal_app.publisher
             document.querySelector("#second-internal-desc").innerText = data.second_internal_app.description
+            document.querySelector("#second-internal-img").src = data.first_internal_app.img_link
+            document.querySelector("#second-internal-hyper").href = data.first_internal_app.hyperlink
+            
             document.querySelector("#first-external-title").innerText = data.first_external_app.title
             document.querySelector("#first-external-pub").innerText = data.first_external_app.publisher
             document.querySelector("#first-external-desc").innerText = data.first_external_app.description
+            document.querySelector("#first-external-img").src = data.first_external_app.img_link
+            document.querySelector("#first-external-hyper").href = data.first_external_app.hyperlink
+            
             document.querySelector("#second-external-title").innerText = data.second_external_app.title
             document.querySelector("#second-external-pub").innerText = data.second_external_app.publisher
             document.querySelector("#second-external-desc").innerText = data.second_external_app.description
+            document.querySelector("#second-external-img").src = data.second_external_app.img_link
+            document.querySelector("#second-external-hyper").href = data.second_external_app.hyperlink
+            
             document.querySelector("#third-external-title").innerText = data.third_external_app.title
             document.querySelector("#third-external-pub").innerText = data.third_external_app.publisher
             document.querySelector("#third-external-desc").innerText = data.third_external_app.description
-            document.querySelector("#first-internal-hyper").href = data.first_external_app.hyperlink
+            document.querySelector("#third-external-img").src = data.third_external_app.img_link
+            document.querySelector("#third-external-hyper").href = data.third_external_app.hyperlink
+            
         })
 </script>
 <div class='title'>
@@ -183,8 +197,8 @@
 
 <div class = "internal-apps">
     <div class="first-internal-app">
-        <a id="first-internal-hyper" href="https://www.click2houston.com/news/local/2020/04/30/map-track-coronavirus-infection-rates-per-capita-county-by-county/">
-            <img src="https://caagkc.org/wp-content/uploads/2017/06/HHS-logo.gif" alt="hhs logo" class="internal-app-image">
+        <a id="first-internal-hyper">
+            <img id="first-internal-img" alt="hhs logo" class="internal-app-image">
         </a>
         <h3 id="first-internal-title"></h3>
         <p>
@@ -193,7 +207,9 @@
         <p id="first-internal-desc"></p>
     </div> 
     <div class="second-internal-app">
-        <img src="https://www.naaccr.org/wp-content/uploads/2016/11/cdc-logo.jpg" alt="hhs logo" class="internal-app-image">
+        <a id="second-internal-hyper">
+            <img id="second-internal-img" alt="hhs logo" class="internal-app-image">
+        </a>
         <h3 id="second-internal-title"></h3>
         <p>
             <i id="second-internal-pub"></i>
@@ -203,7 +219,9 @@
 </div>
 <div class='external-apps'>
     <div class='first-external-app'>
-        <img src="https://www.click2houston.com/resizer/edy-EPIFhgNMNbS9_hg8wPG7oOI=/800x465/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/cloudfront-us-east-1.images.arcpublishing.com/gmg/UKIQYQQIFND73HRUR3PH7455VY.png" alt="hhs logo" class="external-app-image">
+        <a id="first-external-hyper">
+            <img id="first-external-img" alt="hhs logo" class="external-app-image">
+        </a>
         <h3 id="first-external-title"></h3>
         <p>
             <i id="first-external-pub"></i>
@@ -211,7 +229,9 @@
         <p id="first-external-desc"></p>
     </div>
     <div class='second-external-app'>
-        <img src="https://static01.nyt.com/images/2021/04/01/multimedia/VIRUS-REDESIGN-03/VIRUS-REDESIGN-03-jumbo-v2.png?quality=90&auto=webp" alt="hhs logo" class="external-app-image">
+        <a id="second-external-hyper">
+            <img id="second-external-img" alt="hhs logo" class="external-app-image">
+        </a>
         <h3 id="second-external-title"></h3>
         <p>
             <i id="second-external-pub"></i>
@@ -219,7 +239,9 @@
         <p id="second-external-desc"></p>
     </div>
     <div class='third-external-app'>
-        <img src="https://caagkc.org/wp-content/uploads/2017/06/HHS-logo.gif" alt="hhs logo" class="external-app-image">
+        <a id="third-external-hyper">
+            <img id="third-external-img" alt="hhs logo" class="external-app-image">
+        </a>
         <h3 id="third-external-title"></h3>
         <p>
             <i id="third-external-pub"></i>
