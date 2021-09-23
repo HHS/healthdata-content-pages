@@ -1,0 +1,37 @@
+{
+    "first-internal-app": {
+      "title": "Protect Public",
+      "publisher": "Department of Health and Human Services",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae, at debitis alias non, saepe itaque praesentium illum rem perspiciatis commodi.",
+      "img-link": "https://caagkc.org/wp-content/uploads/2017/06/HHS-logo.gif",
+      "hyperlink": "https://www.click2houston.com/news/local/2020/04/30/map-track-coronavirus-infection-rates-per-capita-county-by-county/"
+    },
+    "second-internal-app": {
+        "title": "CDC Covid Tracker",
+        "publisher": "Centers for Disease Control and Prevention",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae, at debitis alias non, saepe itaque praesentium illum rem perspiciatis commodi.",
+        "img-link": "https://www.naaccr.org/wp-content/uploads/2016/11/cdc-logo.jpg",
+        "hyperlink": "https://www.click2houston.com/news/local/2020/04/30/map-track-coronavirus-infection-rates-per-capita-county-by-county/"
+    },
+    "first-external-app": {
+        "title": "UM Covid Pulse",
+        "publisher": "University of Minnesota",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae, at debitis alias non, saepe itaque praesentium illum rem perspiciatis commodi.",
+        "img-link": "https://www.click2houston.com/resizer/edy-EPIFhgNMNbS9_hg8wPG7oOI=/800x465/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/cloudfront-us-east-1.images.arcpublishing.com/gmg/UKIQYQQIFND73HRUR3PH7455VY.png",
+        "hyperlink": "https://www.click2houston.com/news/local/2020/04/30/map-track-coronavirus-infection-rates-per-capita-county-by-county/"
+    },
+    "second-external-app": {
+        "title": "NYT Covid Tracker",
+        "publisher": "New York Times",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae, at debitis alias non, saepe itaque praesentium illum rem perspiciatis commodi.",
+        "img-link": "https://static01.nyt.com/images/2021/04/01/multimedia/VIRUS-REDESIGN-03/VIRUS-REDESIGN-03-jumbo-v2.png?quality=90&auto=webp",
+        "hyperlink": "https://www.click2houston.com/news/local/2020/04/30/map-track-coronavirus-infection-rates-per-capita-county-by-county/"
+    },
+    "third-external-app": {
+        "title": "Covid ActNow Dashboard",
+        "publisher": " Covid ActNow",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae, at debitis alias non, saepe itaque praesentium illum rem perspiciatis commodi.",
+        "img-link": "https://caagkc.org/wp-content/uploads/2017/06/HHS-logo.gif",
+        "hyperlink": "https://www.click2houston.com/news/local/2020/04/30/map-track-coronavirus-infection-rates-per-capita-county-by-county/"
+    }
+}

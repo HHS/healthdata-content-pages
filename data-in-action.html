@@ -1,9 +1,17 @@
 <style>
-    html{
-        font-family: sans-serif;
+    html {
+        font-family: Arial, Helvetica, sans-serif;
     }
 
-    div.title{
+    p {
+        line-height: 1.6;
+    }
+
+    i {
+        line-height: normal;
+    }
+
+    div.title {
         background: linear-gradient(180deg, #FFFFFF 0%, #0E75BB 22.92%, #02A9CE 76.56%, rgba(255, 255, 255, 0) 100%);
         /*position: absolute;*/
         left: 10%;
@@ -12,7 +20,7 @@
         bottom: 89.28%;
     }
 
-    h1.title_text{
+    h1.title_text {
         /*position: absolute;
         width: 544px;
         height: 48px;
@@ -24,17 +32,20 @@
         font-weight: bold;
         font-size: 40px;
         line-height: 48px;
+        /* margin-block-end: 0%; */
+        margin-bottom: 0%;
         /* identical to box height, or 120% */
 
         color: #ffffff; 
     }
 
-    p.subtitle{
+    p.subtitle {
         color: #ffffff;
         font-family: sans-serif;
+        margin-top: 0%;
     }
 
-    h3.text{
+    h3.intro-text {
         /* Great Smoky Mountain 
         position: absolute;*/
         width: 655px;
@@ -49,9 +60,106 @@
         /* or 162% */
 
         color: #171717;
+        padding: 3%;
+
+        line-height: 1.6;
+    }
+
+    div.internal-apps {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5%;
+        grid-auto-rows: auto;
+        padding-left: 3%;
+    }
+
+    div.first-internal-app {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    div.second-internal-app {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .internal-app-image {
+        object-fit: contain; 
+        width: 100%; 
+        height: 300px; 
+        align-self: center;
+    }
+
+    div.external-apps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5%;
+        grid-auto-rows: auto;
+        padding-left: 3%;
+        padding-top: 3%;
+    }
+
+    div.first-external-app {
+        grid-column: 1;
+        grid-row: 1;
+        border: 2px solid rgb(196, 194, 194);
+        border-radius: 10px;
+        padding: 5%;
+        padding-bottom: 25%;
+    }
+
+    div.second-external-app {
+        grid-column: 2;
+        grid-row: 1;
+        border: 2px solid rgb(196, 194, 194);
+        border-radius: 10px;
+        padding: 5%;
+        padding-bottom: 25%;
+    }
+
+    div.third-external-app {
+        grid-column: 3;
+        grid-row: 1;
+        border: 2px solid rgb(172, 172, 172);
+        border-radius: 10px;
+        padding: 5%;
+        padding-bottom: 25%;
+    }
+
+    .external-app-image {
+        object-fit: contain; 
+        width: 100%; 
+        height: 200px; 
+        align-self: center;
+        padding-bottom: 3%;
+    }
+
+    div.made-in-hd {
+
     }
 </style>
-
+<script>
+    fetch("https://raw.githubusercontent.com/KevinDuvall-HHS/hhs-ocdo/main/package.json")
+        .then(response => response.json())
+        .then(data => {
+            console.log(data.name)
+            document.querySelector("#first-internal-title").innerText = data.name
+            document.querySelector("#first-internal-pub").innerText = data.name
+            document.querySelector("#first-internal-desc").innerText = data.name
+            document.querySelector("#second-internal-title").innerText = data.name
+            document.querySelector("#second-internal-pub").innerText = data.name
+            document.querySelector("#second-internal-desc").innerText = data.name
+            document.querySelector("#first-external-title").innerText = data.name
+            document.querySelector("#first-external-pub").innerText = data.name
+            document.querySelector("#first-external-desc").innerText = data.name
+            document.querySelector("#second-external-title").innerText = data.name
+            document.querySelector("#second-external-pub").innerText = data.name
+            document.querySelector("#second-external-desc").innerText = data.name
+            document.querySelector("#third-external-title").innerText = data.name
+            document.querySelector("#third-external-pub").innerText = data.name
+            document.querySelector("#third-external-desc").innerText = data.name
+        })
+</script>
 <div class='title'>
     <div style="padding: 20px">
         <h1 class='title_text'>
@@ -63,13 +171,66 @@
     </div>
 </div>
 <div>
-    <h3 class='text'>
+    <h3 class='intro-text'>
         Several internal and external partners engage with data published on Healthdata.gov to inform their own work. The use cases for this data range from observing COVID-19 trends to identifying health disparities across the United States.
     </h3>
 </div>
-<div>
-    <h2>
-        COVID-19 Applications
-    </h2>
+
+<h2 style="padding: 3%;">
+    COVID-19 Applications
+</h2>
+
+<div class = "internal-apps">
+    <div class="first-internal-app">
+        <a href="https://www.click2houston.com/news/local/2020/04/30/map-track-coronavirus-infection-rates-per-capita-county-by-county/">
+            <img src="https://caagkc.org/wp-content/uploads/2017/06/HHS-logo.gif" alt="hhs logo" class="internal-app-image">
+        </a>
+        <h3 id="first-internal-title"></h3>
+        <p>
+            <i id="first-internal-pub"></i>
+        </p>
+        <p id="first-internal-desc"></p>
+    </div> 
+    <div class="second-internal-app">
+        <img src="https://www.naaccr.org/wp-content/uploads/2016/11/cdc-logo.jpg" alt="hhs logo" class="internal-app-image">
+        <h3 id="second-internal-title"></h3>
+        <p>
+            <i id="second-internal-pub"></i>
+        </p>
+        <p id="second-internal-desc"></p>
+    </div> 
+</div>
+<div class='external-apps'>
+    <div class='first-external-app'>
+        <img src="https://www.click2houston.com/resizer/edy-EPIFhgNMNbS9_hg8wPG7oOI=/800x465/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/cloudfront-us-east-1.images.arcpublishing.com/gmg/UKIQYQQIFND73HRUR3PH7455VY.png" alt="hhs logo" class="external-app-image">
+        <h3 id="first-external-title"></h3>
+        <p>
+            <i id="first-external-pub"></i>
+        </p>
+        <p id="first-external-desc"></p>
+    </div>
+    <div class='second-external-app'>
+        <img src="https://static01.nyt.com/images/2021/04/01/multimedia/VIRUS-REDESIGN-03/VIRUS-REDESIGN-03-jumbo-v2.png?quality=90&auto=webp" alt="hhs logo" class="external-app-image">
+        <h3 id="second-external-title"></h3>
+        <p>
+            <i id="second-external-pub"></i>
+        </p>
+        <p id="second-external-desc"></p>
+    </div>
+    <div class='third-external-app'>
+        <img src="https://caagkc.org/wp-content/uploads/2017/06/HHS-logo.gif" alt="hhs logo" class="external-app-image">
+        <h3 id="third-external-title"></h3>
+        <p>
+            <i id="third-external-pub"></i>
+        </p>
+        <p id="third-external-desc"></p>
+    </div>
+</div>
+
+<h2 style="padding: 3%;">
+    Made in HealthData.gov
+</h2>
+
+<div class="made-in-hd">
     
 </div>
