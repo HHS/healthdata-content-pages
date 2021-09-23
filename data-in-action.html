@@ -144,19 +144,19 @@
         .then(data => {
             console.log(data.first_internal_app.pub)
             document.querySelector("#first-internal-title").innerText = data.first_internal_app.title
-            document.querySelector("#first-internal-pub").innerText = data.first_internal_app.pub
+            document.querySelector("#first-internal-pub").innerText = data.first_internal_app.publisher
             document.querySelector("#first-internal-desc").innerText = data.first_internal_app.description
             document.querySelector("#second-internal-title").innerText = data.second_internal_app.title
-            document.querySelector("#second-internal-pub").innerText = data.second_internal_app.pub
+            document.querySelector("#second-internal-pub").innerText = data.second_internal_app.publisher
             document.querySelector("#second-internal-desc").innerText = data.second_internal_app.description
             document.querySelector("#first-external-title").innerText = data.first_external_app.title
-            document.querySelector("#first-external-pub").innerText = data.first_external_app.pub
+            document.querySelector("#first-external-pub").innerText = data.first_external_app.publisher
             document.querySelector("#first-external-desc").innerText = data.first_external_app.description
             document.querySelector("#second-external-title").innerText = data.second_external_app.title
-            document.querySelector("#second-external-pub").innerText = data.second_external_app.pub
+            document.querySelector("#second-external-pub").innerText = data.second_external_app.publisher
             document.querySelector("#second-external-desc").innerText = data.second_external_app.description
             document.querySelector("#third-external-title").innerText = data.third_external_app.title
-            document.querySelector("#third-external-pub").innerText = data.third_external_app.pub
+            document.querySelector("#third-external-pub").innerText = data.third_external_app.publisher
             document.querySelector("#third-external-desc").innerText = data.third_external_app.description
         })
 </script>
