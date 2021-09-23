@@ -158,6 +158,7 @@
             document.querySelector("#third-external-title").innerText = data.third_external_app.title
             document.querySelector("#third-external-pub").innerText = data.third_external_app.publisher
             document.querySelector("#third-external-desc").innerText = data.third_external_app.description
+            document.querySelector("#first-internal-hyper").href = data.first_external_app.hyperlink
         })
 </script>
 <div class='title'>
@@ -182,7 +183,7 @@
 
 <div class = "internal-apps">
     <div class="first-internal-app">
-        <a href="https://www.click2houston.com/news/local/2020/04/30/map-track-coronavirus-infection-rates-per-capita-county-by-county/">
+        <a id="first-internal-hyper" href="https://www.click2houston.com/news/local/2020/04/30/map-track-coronavirus-infection-rates-per-capita-county-by-county/">
             <img src="https://caagkc.org/wp-content/uploads/2017/06/HHS-logo.gif" alt="hhs logo" class="internal-app-image">
         </a>
         <h3 id="first-internal-title"></h3>
