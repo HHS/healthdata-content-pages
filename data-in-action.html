@@ -1,143 +1,150 @@
-<style>
-    html {
-        font-family: Arial, Helvetica, sans-serif;
-    }
+<head>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-    p {
-        line-height: 1.6;
-    }
+        p {
+            line-height: 1.6;
+        }
 
-    i {
-        line-height: normal;
-    }
+        i {
+            line-height: normal;
+        }
 
-    div.title {
-        background: linear-gradient(180deg, #FFFFFF 0%, #0E75BB 22.92%, #02A9CE 76.56%, rgba(255, 255, 255, 0) 100%);
-        /*position: absolute;*/
-        left: 10%;
-        right: 10%;
-        top: 6%;
-        bottom: 89.28%;
-    }
+        div.title {
+            background: linear-gradient(180deg, #FFFFFF 0%, #0E75BB 22.92%, #02A9CE 76.56%, rgba(255, 255, 255, 0) 100%);
+            /*position: absolute;*/
+            left: 10%;
+            right: 10%;
+            top: 6%;
+            bottom: 89.28%;
+        }
 
-    h1.title_text {
-        /*position: absolute;
-        width: 544px;
-        height: 48px;
-        left: 31px;
-        top: 52px;*/
+        h1.title_text {
+            /*position: absolute;
+            width: 544px;
+            height: 48px;
+            left: 31px;
+            top: 52px;*/
 
-        font-family: sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 48px;
-        /* margin-block-end: 0%; */
-        margin-bottom: 0%;
-        /* identical to box height, or 120% */
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            /* margin-block-end: 0%; */
+            margin-bottom: 0%;
+            /* identical to box height, or 120% */
 
-        color: #ffffff; 
-    }
+            color: #ffffff; 
+        }
 
-    p.subtitle {
-        color: #ffffff;
-        font-family: sans-serif;
-        margin-top: 0%;
-    }
+        p.subtitle {
+            color: #ffffff;
+            font-family: sans-serif;
+            margin-top: 0%;
+        }
 
-    h3.intro-text {
-        /* Great Smoky Mountain 
-        position: absolute;*/
-        width: 655px;
-        height: 142px;
-        left: 177px;
-        top: 424px;
-        
-        font-style: normal;
-        font-weight: 300;
-        font-size: 22px;
-        line-height: 36px;
-        /* or 162% */
+        h3.intro-text {
+            /* Great Smoky Mountain 
+            position: absolute;*/
+            width: 655px;
+            height: 142px;
+            left: 177px;
+            top: 424px;
+            
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 36px;
+            /* or 162% */
 
-        color: #171717;
-        padding: 3%;
+            color: #171717;
+            padding: 3%;
 
-        line-height: 1.6;
-    }
+            line-height: 1.6;
+        }
 
-    div.internal-apps {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5%;
-        grid-auto-rows: auto;
-        padding-left: 3%;
-    }
+        div.internal-apps {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5%;
+            grid-auto-rows: auto;
+            padding-left: 3%;
+        }
 
-    div.first_internal_app {
-        grid-column: 1;
-        grid-row: 1;
-    }
+        div.first_internal_app {
+            grid-column: 1;
+            grid-row: 1;
+        }
 
-    div.second-internal-app {
-        grid-column: 2;
-        grid-row: 1;
-    }
+        div.second-internal-app {
+            grid-column: 2;
+            grid-row: 1;
+        }
 
-    .internal-app-image {
-        object-fit: contain; 
-        width: 100%; 
-        height: 300px; 
-        align-self: center;
-    }
+        .internal-app-image {
+            object-fit: contain; 
+            width: 100%; 
+            height: 300px; 
+            align-self: center;
+        }
 
-    div.external-apps {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5%;
-        grid-auto-rows: auto;
-        padding-left: 3%;
-        padding-top: 3%;
-    }
+        div.external-apps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5%;
+            grid-auto-rows: auto;
+            padding-left: 3%;
+            padding-top: 3%;
+        }
 
-    div.first-external-app {
-        grid-column: 1;
-        grid-row: 1;
-        border: 2px solid rgb(196, 194, 194);
-        border-radius: 10px;
-        padding: 5%;
-        padding-bottom: 25%;
-    }
+        div.first-external-app {
+            grid-column: 1;
+            grid-row: 1;
+            border: 2px solid rgb(196, 194, 194);
+            border-radius: 10px;
+            padding: 5%;
+            padding-bottom: 25%;
+        }
 
-    div.second-external-app {
-        grid-column: 2;
-        grid-row: 1;
-        border: 2px solid rgb(196, 194, 194);
-        border-radius: 10px;
-        padding: 5%;
-        padding-bottom: 25%;
-    }
+        div.second-external-app {
+            grid-column: 2;
+            grid-row: 1;
+            border: 2px solid rgb(196, 194, 194);
+            border-radius: 10px;
+            padding: 5%;
+            padding-bottom: 25%;
+        }
 
-    div.third-external-app {
-        grid-column: 3;
-        grid-row: 1;
-        border: 2px solid rgb(172, 172, 172);
-        border-radius: 10px;
-        padding: 5%;
-        padding-bottom: 25%;
-    }
+        div.third-external-app {
+            grid-column: 3;
+            grid-row: 1;
+            border: 2px solid rgb(172, 172, 172);
+            border-radius: 10px;
+            padding: 5%;
+            padding-bottom: 25%;
+        }
 
-    .external-app-image {
-        object-fit: contain; 
-        width: 100%; 
-        height: 200px; 
-        align-self: center;
-        padding-bottom: 3%;
-    }
+        .external-app-image {
+            object-fit: contain; 
+            width: 100%; 
+            height: 200px; 
+            align-self: center;
+            padding-bottom: 3%;
+        }
 
-    div.made-in-hd {
+        div.made-in-hd {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5%;
+            grid-auto-rows: auto;
+            padding-left: 3%;
+            padding-top: 3%;
+        }
 
-    }
-</style>
+    </style>
 <script>
     fetch("https://raw.githubusercontent.com/jackbastian/healthdata-content-pages/main/content/data-in-action.json")
         .then(response => response.json())
@@ -175,85 +182,98 @@
             
         })
 </script>
-<div class='title'>
-    <div style="padding: 20px">
-        <h1 class='title_text'>
-            Data in action
-        </h1>
-        <p class='subtitle'>
-            Tools and analyses that use data to understand important health challenges
-        </p>
-    </div>
-</div>
-<div>
-    <h3 class='intro-text'>
-        Several internal and external partners engage with data published on Healthdata.gov to inform their own work. The use cases for this data range from observing COVID-19 trends to identifying health disparities across the United States.
-    </h3>
-</div>
+</head>
 
-<h2 style="padding: 3%;">
-    COVID-19 Applications
-</h2>
-
-<div class = "internal-apps">
-    <div class="first-internal-app">
-        <a id="first-internal-hyper" target="_blank" rel="noopener noreferrer">
-            <img id="first-internal-img" alt="hhs logo" class="internal-app-image">
-        </a>
-        <h3 id="first-internal-title"></h3>
-        <p>
-            <i id="first-internal-pub"></i>
-        </p>
-        <p id="first-internal-desc"></p>
-    </div> 
-    <div class="second-internal-app">
-        <a id="second-internal-hyper" target="_blank" rel="noopener noreferrer">
-            <img id="second-internal-img" alt="hhs logo" class="internal-app-image">
-        </a>
-        <h3 id="second-internal-title"></h3>
-        <p>
-            <i id="second-internal-pub"></i>
-        </p>
-        <p id="second-internal-desc"></p>
-    </div> 
-</div>
-<div class='external-apps'>
-    <div class='first-external-app'>
-        <a id="first-external-hyper" target="_blank" rel="noopener noreferrer">
-            <img id="first-external-img" alt="hhs logo" class="external-app-image">
-        </a>
-        <h3 id="first-external-title"></h3>
-        <p>
-            <i id="first-external-pub"></i>
-        </p>
-        <p id="first-external-desc"></p>
+<body>
+    <div class='title'>
+        <div style="padding: 20px">
+            <h1 class='title_text'>
+                Data in action
+            </h1>
+            <p class='subtitle'>
+                Tools and analyses that use data to understand important health challenges
+            </p>
+        </div>
     </div>
-    <div class='second-external-app'>
-        <a id="second-external-hyper" target="_blank" rel="noopener noreferrer">
-            <img id="second-external-img" alt="hhs logo" class="external-app-image">
-        </a>
-        <h3 id="second-external-title"></h3>
-        <p>
-            <i id="second-external-pub"></i>
-        </p>
-        <p id="second-external-desc"></p>
+    <div>
+        <h3 class='intro-text'>
+            Several internal and external partners engage with data published on Healthdata.gov to inform their own work. The use cases for this data range from observing COVID-19 trends to identifying health disparities across the United States.
+        </h3>
     </div>
-    <div class='third-external-app'>
-        <a id="third-external-hyper" target="_blank" rel="noopener noreferrer">
-            <img id="third-external-img" alt="hhs logo" class="external-app-image">
-        </a>
-        <h3 id="third-external-title"></h3>
-        <p>
-            <i id="third-external-pub"></i>
-        </p>
-        <p id="third-external-desc"></p>
+
+    <h2 style="padding: 3%;">
+        COVID-19 Applications
+    </h2>
+
+    <div class = "internal-apps">
+        <div class="first-internal-app">
+            <a id="first-internal-hyper" target="_blank" rel="noopener noreferrer">
+                <img id="first-internal-img" alt="hhs logo" class="internal-app-image">
+            </a>
+            <h3 id="first-internal-title"></h3>
+            <p>
+                <i id="first-internal-pub"></i>
+            </p>
+            <p id="first-internal-desc"></p>
+        </div> 
+        <div class="second-internal-app">
+            <a id="second-internal-hyper" target="_blank" rel="noopener noreferrer">
+                <img id="second-internal-img" alt="hhs logo" class="internal-app-image">
+            </a>
+            <h3 id="second-internal-title"></h3>
+            <p>
+                <i id="second-internal-pub"></i>
+            </p>
+            <p id="second-internal-desc"></p>
+        </div> 
     </div>
-</div>
+    <div class='external-apps'>
+        <div class='first-external-app'>
+            <a id="first-external-hyper" target="_blank" rel="noopener noreferrer">
+                <img id="first-external-img" alt="hhs logo" class="external-app-image">
+            </a>
+            <h3 id="first-external-title"></h3>
+            <p>
+                <i id="first-external-pub"></i>
+            </p>
+            <p id="first-external-desc"></p>
+        </div>
+        <div class='second-external-app'>
+            <a id="second-external-hyper" target="_blank" rel="noopener noreferrer">
+                <img id="second-external-img" alt="hhs logo" class="external-app-image">
+            </a>
+            <h3 id="second-external-title"></h3>
+            <p>
+                <i id="second-external-pub"></i>
+            </p>
+            <p id="second-external-desc"></p>
+        </div>
+        <div class='third-external-app'>
+            <a id="third-external-hyper" target="_blank" rel="noopener noreferrer">
+                <img id="third-external-img" alt="hhs logo" class="external-app-image">
+            </a>
+            <h3 id="third-external-title"></h3>
+            <p>
+                <i id="third-external-pub"></i>
+            </p>
+            <p id="third-external-desc"></p>
+        </div>
+    </div>
 
-<h2 style="padding: 3%;">
-    Made in HealthData.gov
-</h2>
+    <h2 style="padding: 3%;">
+        Made in HealthData.gov
+    </h2>
 
-<div class="made-in-hd">
-    
-</div>
+    <div class="made-in-hd">
+        <div class="first-internal-app">
+            <a id="first-internal-hyper" target="_blank" rel="noopener noreferrer">
+                <img id="first-internal-img" alt="hhs logo" class="internal-app-image">
+            </a>
+            <h3 id="first-internal-title">yoyoyo</h3>
+            <p>
+                <i id="first-internal-pub"></i>
+            </p>
+            <p id="first-internal-desc"></p>
+        </div> 
+    </div>
+</body>
