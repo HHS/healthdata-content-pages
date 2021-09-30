@@ -1,0 +1,195 @@
+<head>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+        div.title {
+            background: linear-gradient(180deg, #FFFFFF 0%, #0E75BB 22.92%, #02A9CE 76.56%, rgba(255, 255, 255, 0) 100%);
+            /*position: absolute;*/
+            left: 10%;
+            right: 10%;
+            top: 6%;
+            bottom: 89.28%;
+        }
+
+        h1.title_text {
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 0%;
+            color: #ffffff; 
+        }
+
+        p.subtitle {
+            color: #ffffff;
+            font-family: sans-serif;
+            margin-top: 0%;
+        }
+
+        h3.intro-text {
+            width: 655px;
+            height: 142px;
+            left: 177px;
+            top: 424px;
+            
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 36px;
+
+            color: #171717;
+            padding: 3%;
+
+            line-height: 1.6;
+        }
+
+        div.posts {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5%;
+            grid-auto-rows: auto;
+            padding-left: 3%;
+        }
+        
+        .post-image {
+            object-fit: contain; 
+            width: 100%; 
+            height: 200px; 
+            align-self: center;
+        }
+
+    </style>
+    <script>
+        fetch("https://raw.githubusercontent.com/jackbastian/healthdata-content-pages/main/content/blog.json")
+            .then(response => response.json())
+            .then(data => {
+                document.querySelector("first-post-title").innerText = data.first_post.title
+                document.querySelector("first-post-date").innerText = data.first_post.date
+                document.querySelector("first-post-desc").innerText = data.first_post.description
+                document.querySelector("first-post-img").src = data.first_post.img_link
+                document.querySelector("first-post-hyper").href = data.first_post.hyperlink
+
+                document.querySelector("second-post-title").innerText = data.second_post.title
+                document.querySelector("second-post-date").innerText = data.second_post.date
+                document.querySelector("second-post-desc").innerText = data.second_post.description
+                document.querySelector("second-post-img").src = data.second_post.img_link
+                document.querySelector("second-post-hyper").href = data.second_post.hyperlink
+
+                document.querySelector("third-post-title").innerText = data.third_post.title
+                document.querySelector("third-post-date").innerText = data.third_post.date
+                document.querySelector("third-post-desc").innerText = data.third_post.description
+                document.querySelector("third-post-img").src = data.third_post.img_link
+                document.querySelector("third-post-hyper").href = data.third_post.hyperlink
+
+                document.querySelector("fourth-post-title").innerText = data.fourth_post.title
+                document.querySelector("fourth-post-date").innerText = data.fourth_post.date
+                document.querySelector("fourth-post-desc").innerText = data.fourth_post.description
+                document.querySelector("fourth-post-img").src = data.fourth_post.img_link
+                document.querySelector("fourth-post-hyper").href = data.fourth_post.hyperlink
+
+                document.querySelector("fifth-post-title").innerText = data.fifth_post.title
+                document.querySelector("fifth-post-date").innerText = data.fifth_post.date
+                document.querySelector("fifth-post-desc").innerText = data.fifth_post.description
+                document.querySelector("fifth-post-img").src = data.fifth_post.img_link
+                document.querySelector("fifth-post-hyper").href = data.fifth_post.hyperlink
+                
+                document.querySelector("sixth-post-title").innerText = data.sixth_post.title
+                document.querySelector("sixth-post-date").innerText = data.sixth_post.date
+                document.querySelector("sixth-post-desc").innerText = data.sixth_post.description
+                document.querySelector("sixth-post-img").src = data.sixth_post.img_link
+                document.querySelector("sixth-post-hyper").href = data.sixth_post.hyperlink
+
+            })
+    </script>
+</head>
+
+<body>
+    <div class='title'>
+        <div style="padding: 20px">
+            <h1 class='title_text'>
+                HealthData Blog
+            </h1>
+            <p class='subtitle'>
+                Informing better health outcomes.
+            </p>
+        </div>
+    </div>
+    <div>
+        <h3 class='intro-text'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae, at debitis alias non, saepe itaque praesentium illum rem perspiciatis commodi.
+        </h3>
+    </div>
+
+    <h2 style="padding: 3%;">
+        Recent Posts
+    </h2> 
+    
+    <div class="posts">
+        <div>
+            <a id=first-post-hyper" target="_blank" rel="noopener noreferrer">
+                <img id=first-post-img" alt="hhs logo" class="post-image">
+            </a>
+            <h3 id=first-post-title"></h3>
+            <p>
+                <i id=first-post-pub"></i>
+            </p>
+            <p id=first-post-desc"></p>
+        </div>
+        <div>
+            <a id=second-post-hyper" target="_blank" rel="noopener noreferrer">
+                <img id=second-post-img" alt="hhs logo" class="post-image">
+            </a>
+            <h3 id=second-post-title"></h3>
+            <p>
+                <i id=second-post-pub"></i>
+            </p>
+            <p id=second-post-desc"></p>
+        </div>
+        <div>
+            <a id=third-post-hyper" target="_blank" rel="noopener noreferrer">
+                <img id=third-post-img" alt="hhs logo" class="post-image">
+            </a>
+            <h3 id=third-post-title"></h3>
+            <p>
+                <i id=third-post-pub"></i>
+            </p>
+            <p id=third-post-desc"></p>
+        </div>
+        <div>
+            <a id=fourth-post-hyper" target="_blank" rel="noopener noreferrer">
+                <img id=fourth-post-img" alt="hhs logo" class="post-image">
+            </a>
+            <h3 id=fourth-post-title"></h3>
+            <p>
+                <i id=fourth-post-pub"></i>
+            </p>
+            <p id=fourth-post-desc"></p>
+        </div>
+        <div>
+            <a id=fifth-post-hyper" target="_blank" rel="noopener noreferrer">
+                <img id=fifth-post-img" alt="hhs logo" class="post-image">
+            </a>
+            <h3 id=fifth-post-title"></h3>
+            <p>
+                <i id=fifth-post-pub"></i>
+            </p>
+            <p id=fifth-post-desc"></p>
+        </div>
+        <div>
+            <a id=sixth-post-hyper" target="_blank" rel="noopener noreferrer">
+                <img id=sixth-post-img" alt="hhs logo" class="post-image">
+            </a>
+            <h3 id=sixth-post-title"></h3>
+            <p>
+                <i id=sixth-post-pub"></i>
+            </p>
+            <p id=sixth-post-desc"></p>
+        </div>
+    </div>
+</body>
