@@ -33,5 +33,23 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae, at debitis alias non, saepe itaque praesentium illum rem perspiciatis commodi.",
         "img_link": "https://caagkc.org/wp-content/uploads/2017/06/HHS-logo.gif",
         "hyperlink": "https://www.click2houston.com/news/local/2020/04/30/map-track-coronavirus-infection-rates-per-capita-county-by-county/"
+    },
+    "first_made_in_hd": {
+        "title": "Covid ActNow Dashboard",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae, at debitis alias non, saepe itaque praesentium illum rem perspiciatis commodi.",
+        "img_link": "https://caagkc.org/wp-content/uploads/2017/06/HHS-logo.gif",
+        "hyperlink": "https://www.click2houston.com/news/local/2020/04/30/map-track-coronavirus-infection-rates-per-capita-county-by-county/"
+    },
+    "second_made_in_hd": {
+        "title": "Covid ActNow Dashboard",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae, at debitis alias non, saepe itaque praesentium illum rem perspiciatis commodi.",
+        "img_link": "https://caagkc.org/wp-content/uploads/2017/06/HHS-logo.gif",
+        "hyperlink": "https://www.click2houston.com/news/local/2020/04/30/map-track-coronavirus-infection-rates-per-capita-county-by-county/"
+    },
+    "third_made_in_hd": {
+        "title": "Covid ActNow Dashboard",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae, at debitis alias non, saepe itaque praesentium illum rem perspiciatis commodi.",
+        "img_link": "https://caagkc.org/wp-content/uploads/2017/06/HHS-logo.gif",
+        "hyperlink": "https://www.click2houston.com/news/local/2020/04/30/map-track-coronavirus-infection-rates-per-capita-county-by-county/"
     }
 }

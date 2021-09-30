@@ -84,6 +84,11 @@
             grid-row: 1;
         }
 
+        div.third-internal-app {
+            grid-column: 3;
+            grid-row: 1
+        }
+
         .internal-app-image {
             object-fit: contain; 
             width: 100%; 
@@ -179,7 +184,22 @@
             document.querySelector("#third-external-desc").innerText = data.third_external_app.description
             document.querySelector("#third-external-img").src = data.third_external_app.img_link
             document.querySelector("#third-external-hyper").href = data.third_external_app.hyperlink
-            
+     
+            document.querySelector("#first-made-in-hd-title").innerText = data.first_made_in_hd.title
+            document.querySelector("#first-made-in-hd-desc").innerText = data.first_made_in_hd.description
+            document.querySelector("#first-made-in-hd-img").src = data.first_made_in_hd.img_link
+            document.querySelector("#first-made-in-hd-hyper").href = data.first_made_in_hd.hyperlink
+
+            document.querySelector("#second-made-in-hd-title").innerText = data.second_made_in_hd.title
+            document.querySelector("#second-made-in-hd-desc").innerText = data.second_made_in_hd.description
+            document.querySelector("#second-made-in-hd-img").src = data.second_made_in_hd.img_link
+            document.querySelector("#second-made-in-hd-hyper").href = data.second_made_in_hd.hyperlink
+                        
+            document.querySelector("#third-made-in-hd-title").innerText = data.third_made_in_hd.title
+            document.querySelector("#third-made-in-hd-desc").innerText = data.third_made_in_hd.description
+            document.querySelector("#third-made-in-hd-img").src = data.third_made_in_hd.img_link
+            document.querySelector("#third-made-in-hd-hyper").href = data.third_made_in_hd.hyperlink
+
         })
 </script>
 </head>
@@ -263,17 +283,27 @@
     <h2 style="padding: 3%;">
         Made in HealthData.gov
     </h2>
-
     <div class="made-in-hd">
         <div class="first-internal-app">
-            <a id="first-internal-hyper" target="_blank" rel="noopener noreferrer">
-                <img id="first-internal-img" alt="hhs logo" class="internal-app-image">
+            <a id="first-made-in-hd-hyper" target="_blank" rel="noopener noreferrer">
+                <img id="first-made-in-hd-img" alt="hhs logo" class="internal-app-image">
             </a>
-            <h3 id="first-internal-title">yoyoyo</h3>
-            <p>
-                <i id="first-internal-pub"></i>
-            </p>
-            <p id="first-internal-desc"></p>
+            <h3 id="first-made-in-hd-title"></h3>
+            <p id="first-made-in-hd-desc"></p>
+        </div> 
+        <div class="second-internal-app">
+            <a id="second-made-in-hd-hyper" target="_blank" rel="noopener noreferrer">
+                <img id="second-made-in-hd-img" alt="hhs logo" class="internal-app-image">
+            </a>
+            <h3 id="second-made-in-hd-title"></h3>
+            <p id="second-made-in-hd-desc"></p>
+        </div> 
+        <div class="third-internal-app">
+            <a id="third-made-in-hd-hyper" target="_blank" rel="noopener noreferrer">
+                <img id="third-made-in-hd-img" alt="hhs logo" class="internal-app-image">
+            </a>
+            <h3 id="third-made-in-hd-title"></h3>
+            <p id="third-made-in-hd-desc"></p>
         </div> 
     </div>
 </body>
