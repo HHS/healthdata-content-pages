@@ -69,41 +69,41 @@
         fetch("https://raw.githubusercontent.com/jackbastian/healthdata-content-pages/main/content/blog.json")
             .then(response => response.json())
             .then(data => {
-                document.querySelector("first-post-title").innerText = data.first_post.title
-                document.querySelector("first-post-date").innerText = data.first_post.date
-                document.querySelector("first-post-desc").innerText = data.first_post.description
-                document.querySelector("first-post-img").src = data.first_post.img_link
-                document.querySelector("first-post-hyper").href = data.first_post.hyperlink
+                document.querySelector("#first-post-title").innerText = data.first_post.title
+                document.querySelector("#first-post-date").innerText = data.first_post.date
+                document.querySelector("#first-post-desc").innerText = data.first_post.description
+                document.querySelector("#first-post-img").src = data.first_post.img_link
+                document.querySelector("#first-post-hyper").href = data.first_post.hyperlink
 
-                document.querySelector("second-post-title").innerText = data.second_post.title
-                document.querySelector("second-post-date").innerText = data.second_post.date
-                document.querySelector("second-post-desc").innerText = data.second_post.description
-                document.querySelector("second-post-img").src = data.second_post.img_link
-                document.querySelector("second-post-hyper").href = data.second_post.hyperlink
+                document.querySelector("#second-post-title").innerText = data.second_post.title
+                document.querySelector("#second-post-date").innerText = data.second_post.date
+                document.querySelector("#second-post-desc").innerText = data.second_post.description
+                document.querySelector("#second-post-img").src = data.second_post.img_link
+                document.querySelector("#second-post-hyper").href = data.second_post.hyperlink
 
-                document.querySelector("third-post-title").innerText = data.third_post.title
-                document.querySelector("third-post-date").innerText = data.third_post.date
-                document.querySelector("third-post-desc").innerText = data.third_post.description
-                document.querySelector("third-post-img").src = data.third_post.img_link
-                document.querySelector("third-post-hyper").href = data.third_post.hyperlink
+                document.querySelector("#third-post-title").innerText = data.third_post.title
+                document.querySelector("#third-post-date").innerText = data.third_post.date
+                document.querySelector("#third-post-desc").innerText = data.third_post.description
+                document.querySelector("#third-post-img").src = data.third_post.img_link
+                document.querySelector("#third-post-hyper").href = data.third_post.hyperlink
 
-                document.querySelector("fourth-post-title").innerText = data.fourth_post.title
-                document.querySelector("fourth-post-date").innerText = data.fourth_post.date
-                document.querySelector("fourth-post-desc").innerText = data.fourth_post.description
-                document.querySelector("fourth-post-img").src = data.fourth_post.img_link
-                document.querySelector("fourth-post-hyper").href = data.fourth_post.hyperlink
+                document.querySelector("#fourth-post-title").innerText = data.fourth_post.title
+                document.querySelector("#fourth-post-date").innerText = data.fourth_post.date
+                document.querySelector("#fourth-post-desc").innerText = data.fourth_post.description
+                document.querySelector("#fourth-post-img").src = data.fourth_post.img_link
+                document.querySelector("#fourth-post-hyper").href = data.fourth_post.hyperlink
 
-                document.querySelector("fifth-post-title").innerText = data.fifth_post.title
-                document.querySelector("fifth-post-date").innerText = data.fifth_post.date
-                document.querySelector("fifth-post-desc").innerText = data.fifth_post.description
-                document.querySelector("fifth-post-img").src = data.fifth_post.img_link
-                document.querySelector("fifth-post-hyper").href = data.fifth_post.hyperlink
+                document.querySelector("#fifth-post-title").innerText = data.fifth_post.title
+                document.querySelector("#fifth-post-date").innerText = data.fifth_post.date
+                document.querySelector("#fifth-post-desc").innerText = data.fifth_post.description
+                document.querySelector("#fifth-post-img").src = data.fifth_post.img_link
+                document.querySelector("#fifth-post-hyper").href = data.fifth_post.hyperlink
                 
-                document.querySelector("sixth-post-title").innerText = data.sixth_post.title
-                document.querySelector("sixth-post-date").innerText = data.sixth_post.date
-                document.querySelector("sixth-post-desc").innerText = data.sixth_post.description
-                document.querySelector("sixth-post-img").src = data.sixth_post.img_link
-                document.querySelector("sixth-post-hyper").href = data.sixth_post.hyperlink
+                document.querySelector("#sixth-post-title").innerText = data.sixth_post.title
+                document.querySelector("#sixth-post-date").innerText = data.sixth_post.date
+                document.querySelector("#sixth-post-desc").innerText = data.sixth_post.description
+                document.querySelector("#sixth-post-img").src = data.sixth_post.img_link
+                document.querySelector("#sixth-post-hyper").href = data.sixth_post.hyperlink
 
             })
     </script>
@@ -132,64 +132,64 @@
     
     <div class="posts">
         <div>
-            <a id=first-post-hyper" target="_blank" rel="noopener noreferrer">
-                <img id=first-post-img" alt="hhs logo" class="post-image">
+            <a id="first-post-hyper" target="_blank" rel="noopener noreferrer">
+                <img id="first-post-img" alt="hhs logo" class="post-image">
             </a>
-            <h3 id=first-post-title"></h3>
+            <h3 id="first-post-title"></h3>
             <p>
-                <i id=first-post-pub"></i>
+                <i id="first-post-date"></i>
             </p>
-            <p id=first-post-desc"></p>
+            <p id="first-post-desc"></p>
         </div>
         <div>
-            <a id=second-post-hyper" target="_blank" rel="noopener noreferrer">
-                <img id=second-post-img" alt="hhs logo" class="post-image">
+            <a id="second-post-hyper" target="_blank" rel="noopener noreferrer">
+                <img id="second-post-img" alt="hhs logo" class="post-image">
             </a>
-            <h3 id=second-post-title"></h3>
+            <h3 id="second-post-title"></h3>
             <p>
-                <i id=second-post-pub"></i>
+                <i id="second-post-date"></i>
             </p>
-            <p id=second-post-desc"></p>
+            <p id="second-post-desc"></p>
         </div>
         <div>
-            <a id=third-post-hyper" target="_blank" rel="noopener noreferrer">
-                <img id=third-post-img" alt="hhs logo" class="post-image">
+            <a id="third-post-hyper" target="_blank" rel="noopener noreferrer">
+                <img id="third-post-img" alt="hhs logo" class="post-image">
             </a>
-            <h3 id=third-post-title"></h3>
+            <h3 id="third-post-title"></h3>
             <p>
-                <i id=third-post-pub"></i>
+                <i id="third-post-date"></i>
             </p>
-            <p id=third-post-desc"></p>
+            <p id="third-post-desc"></p>
         </div>
         <div>
-            <a id=fourth-post-hyper" target="_blank" rel="noopener noreferrer">
-                <img id=fourth-post-img" alt="hhs logo" class="post-image">
+            <a id="fourth-post-hyper" target="_blank" rel="noopener noreferrer">
+                <img id="fourth-post-img" alt="hhs logo" class="post-image">
             </a>
-            <h3 id=fourth-post-title"></h3>
+            <h3 id="fourth-post-title"></h3>
             <p>
-                <i id=fourth-post-pub"></i>
+                <i id="fourth-post-date"></i>
             </p>
-            <p id=fourth-post-desc"></p>
+            <p id="fourth-post-desc"></p>
         </div>
         <div>
-            <a id=fifth-post-hyper" target="_blank" rel="noopener noreferrer">
-                <img id=fifth-post-img" alt="hhs logo" class="post-image">
+            <a id="fifth-post-hyper" target="_blank" rel="noopener noreferrer">
+                <img id="fifth-post-img" alt="hhs logo" class="post-image">
             </a>
-            <h3 id=fifth-post-title"></h3>
+            <h3 id="fifth-post-title"></h3>
             <p>
-                <i id=fifth-post-pub"></i>
+                <i id="fifth-post-date"></i>
             </p>
-            <p id=fifth-post-desc"></p>
+            <p id="fifth-post-desc"></p>
         </div>
         <div>
-            <a id=sixth-post-hyper" target="_blank" rel="noopener noreferrer">
-                <img id=sixth-post-img" alt="hhs logo" class="post-image">
+            <a id="sixth-post-hyper" target="_blank" rel="noopener noreferrer">
+                <img id="sixth-post-img" alt="hhs logo" class="post-image">
             </a>
-            <h3 id=sixth-post-title"></h3>
+            <h3 id="sixth-post-title"></h3>
             <p>
-                <i id=sixth-post-pub"></i>
+                <i id="sixth-post-date"></i>
             </p>
-            <p id=sixth-post-desc"></p>
+            <p id="sixth-post-desc"></p>
         </div>
     </div>
 </body>
