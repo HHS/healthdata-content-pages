@@ -64,6 +64,25 @@
             align-self: center;
         }
 
+        button.see_more {
+            padding: 1%;
+            background: #FFFFFF;
+            border: 1px solid #0071BC;
+            box-sizing: border-box;
+            border-radius: 3px;
+            margin: 3%;
+        }
+
+        p.see_more_text {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 21px;
+
+            text-align: center;
+
+            color: #0071BC; 
+        }
+
     </style>
     <script>
         fetch("https://raw.githubusercontent.com/jackbastian/healthdata-content-pages/main/content/blog.json")
@@ -192,4 +211,10 @@
             <p id="sixth-post-desc"></p>
         </div>
     </div>
+    <button class="see_more">
+        <p class="see_more_text">
+            See more posts
+        </p>
+    </button>
+    
 </body>

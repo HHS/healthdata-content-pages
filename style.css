@@ -1,0 +1,52 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 1.6;
+}
+
+i {
+    line-height: normal;
+}
+
+div.title {
+    background: linear-gradient(180deg, #FFFFFF 0%, #0E75BB 22.92%, #02A9CE 76.56%, rgba(255, 255, 255, 0) 100%);
+    /*position: absolute;*/
+    left: 10%;
+    right: 10%;
+    top: 6%;
+    bottom: 89.28%;
+}
+
+h1.title_text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 0%;
+    color: #ffffff; 
+}
+
+p.subtitle {
+    color: #ffffff;
+    font-family: sans-serif;
+    margin-top: 0%;
+}
+
+h3.intro-text {
+    width: 655px;
+    height: 142px;
+    left: 177px;
+    top: 424px;
+    
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 36px;
+
+    color: #171717;
+    padding-top: 1%;
+    padding-left: 3%;
+
+    line-height: 1.6;
+}
