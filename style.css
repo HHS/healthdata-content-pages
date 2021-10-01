@@ -12,14 +12,13 @@ i {
 
 div.title {
     background: linear-gradient(180deg, #FFFFFF 0%, #0E75BB 22.92%, #02A9CE 76.56%, rgba(255, 255, 255, 0) 100%);
-    /*position: absolute;*/
     left: 10%;
     right: 10%;
     top: 6%;
     bottom: 89.28%;
 }
 
-h1.title_text {
+h1.title-text {
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -33,6 +32,10 @@ p.subtitle {
     margin-top: 0%;
 }
 
+div.page-body {
+    padding-left: 3%;
+}
+
 h3.intro-text {
     width: 655px;
     height: 142px;
@@ -42,11 +45,13 @@ h3.intro-text {
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
-    line-height: 36px;
 
     color: #171717;
     padding-top: 1%;
-    padding-left: 3%;
 
     line-height: 1.6;
+}
+
+h2.section-header {
+    padding-top: 2%;
 }

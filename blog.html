@@ -1,60 +1,11 @@
 <head>
+    <link rel="stylesheet" href="style.css">
     <style>
-        html {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-        div.title {
-            background: linear-gradient(180deg, #FFFFFF 0%, #0E75BB 22.92%, #02A9CE 76.56%, rgba(255, 255, 255, 0) 100%);
-            /*position: absolute;*/
-            left: 10%;
-            right: 10%;
-            top: 6%;
-            bottom: 89.28%;
-        }
-
-        h1.title_text {
-            font-family: sans-serif;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 48px;
-            margin-bottom: 0%;
-            color: #ffffff; 
-        }
-
-        p.subtitle {
-            color: #ffffff;
-            font-family: sans-serif;
-            margin-top: 0%;
-        }
-
-        h3.intro-text {
-            width: 655px;
-            height: 142px;
-            left: 177px;
-            top: 424px;
-            
-            font-style: normal;
-            font-weight: 300;
-            font-size: 22px;
-            line-height: 36px;
-
-            color: #171717;
-            padding: 3%;
-
-            line-height: 1.6;
-        }
-
         div.posts {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 5%;
             grid-auto-rows: auto;
-            padding-left: 3%;
         }
         
         .post-image {
@@ -64,23 +15,19 @@
             align-self: center;
         }
 
-        button.see_more {
+        a.see-more {
+            color: blue;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
             padding: 1%;
             background: #FFFFFF;
             border: 1px solid #0071BC;
             box-sizing: border-box;
             border-radius: 3px;
-            margin: 3%;
-        }
-
-        p.see_more_text {
-            font-style: normal;
             font-weight: bold;
-            font-size: 21px;
-
-            text-align: center;
-
-            color: #0071BC; 
         }
 
     </style>
@@ -130,8 +77,8 @@
 
 <body>
     <div class='title'>
-        <div style="padding: 20px">
-            <h1 class='title_text'>
+        <div style="padding: 1%">
+            <h1 class='title-text'>
                 HealthData Blog
             </h1>
             <p class='subtitle'>
@@ -139,82 +86,82 @@
             </p>
         </div>
     </div>
-    <div>
-        <h3 class='intro-text'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae, at debitis alias non, saepe itaque praesentium illum rem perspiciatis commodi.
-        </h3>
-    </div>
+    <div class="page-body">
+        <div>
+            <h3 class='intro-text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae, at debitis alias non, saepe itaque praesentium illum rem perspiciatis commodi.
+            </h3>
+        </div>
 
-    <h2 style="padding: 3%;">
-        Recent Posts
-    </h2> 
-    
-    <div class="posts">
-        <div>
-            <a id="first-post-hyper" target="_blank" rel="noopener noreferrer">
-                <img id="first-post-img" alt="hhs logo" class="post-image">
-            </a>
-            <h3 id="first-post-title"></h3>
-            <p>
-                <i id="first-post-date"></i>
-            </p>
-            <p id="first-post-desc"></p>
+        <h2 class="section-header">
+            Recent Posts
+        </h2> 
+        
+        <div class="posts">
+            <div>
+                <a id="first-post-hyper" target="_blank" rel="noopener noreferrer">
+                    <img id="first-post-img" alt="hhs logo" class="post-image">
+                </a>
+                <h3 id="first-post-title"></h3>
+                <p>
+                    <i id="first-post-date"></i>
+                </p>
+                <p id="first-post-desc"></p>
+            </div>
+            <div>
+                <a id="second-post-hyper" target="_blank" rel="noopener noreferrer">
+                    <img id="second-post-img" alt="hhs logo" class="post-image">
+                </a>
+                <h3 id="second-post-title"></h3>
+                <p>
+                    <i id="second-post-date"></i>
+                </p>
+                <p id="second-post-desc"></p>
+            </div>
+            <div>
+                <a id="third-post-hyper" target="_blank" rel="noopener noreferrer">
+                    <img id="third-post-img" alt="hhs logo" class="post-image">
+                </a>
+                <h3 id="third-post-title"></h3>
+                <p>
+                    <i id="third-post-date"></i>
+                </p>
+                <p id="third-post-desc"></p>
+            </div>
+            <div>
+                <a id="fourth-post-hyper" target="_blank" rel="noopener noreferrer">
+                    <img id="fourth-post-img" alt="hhs logo" class="post-image">
+                </a>
+                <h3 id="fourth-post-title"></h3>
+                <p>
+                    <i id="fourth-post-date"></i>
+                </p>
+                <p id="fourth-post-desc"></p>
+            </div>
+            <div>
+                <a id="fifth-post-hyper" target="_blank" rel="noopener noreferrer">
+                    <img id="fifth-post-img" alt="hhs logo" class="post-image">
+                </a>
+                <h3 id="fifth-post-title"></h3>
+                <p>
+                    <i id="fifth-post-date"></i>
+                </p>
+                <p id="fifth-post-desc"></p>
+            </div>
+            <div>
+                <a id="sixth-post-hyper" target="_blank" rel="noopener noreferrer">
+                    <img id="sixth-post-img" alt="hhs logo" class="post-image">
+                </a>
+                <h3 id="sixth-post-title"></h3>
+                <p>
+                    <i id="sixth-post-date"></i>
+                </p>
+                <p id="sixth-post-desc"></p>
+            </div>
         </div>
-        <div>
-            <a id="second-post-hyper" target="_blank" rel="noopener noreferrer">
-                <img id="second-post-img" alt="hhs logo" class="post-image">
-            </a>
-            <h3 id="second-post-title"></h3>
-            <p>
-                <i id="second-post-date"></i>
-            </p>
-            <p id="second-post-desc"></p>
-        </div>
-        <div>
-            <a id="third-post-hyper" target="_blank" rel="noopener noreferrer">
-                <img id="third-post-img" alt="hhs logo" class="post-image">
-            </a>
-            <h3 id="third-post-title"></h3>
-            <p>
-                <i id="third-post-date"></i>
-            </p>
-            <p id="third-post-desc"></p>
-        </div>
-        <div>
-            <a id="fourth-post-hyper" target="_blank" rel="noopener noreferrer">
-                <img id="fourth-post-img" alt="hhs logo" class="post-image">
-            </a>
-            <h3 id="fourth-post-title"></h3>
-            <p>
-                <i id="fourth-post-date"></i>
-            </p>
-            <p id="fourth-post-desc"></p>
-        </div>
-        <div>
-            <a id="fifth-post-hyper" target="_blank" rel="noopener noreferrer">
-                <img id="fifth-post-img" alt="hhs logo" class="post-image">
-            </a>
-            <h3 id="fifth-post-title"></h3>
-            <p>
-                <i id="fifth-post-date"></i>
-            </p>
-            <p id="fifth-post-desc"></p>
-        </div>
-        <div>
-            <a id="sixth-post-hyper" target="_blank" rel="noopener noreferrer">
-                <img id="sixth-post-img" alt="hhs logo" class="post-image">
-            </a>
-            <h3 id="sixth-post-title"></h3>
-            <p>
-                <i id="sixth-post-date"></i>
-            </p>
-            <p id="sixth-post-desc"></p>
-        </div>
+        <a href="https://healthdata.gov/browse?category=Blog&sortBy=last_modified&utf8=%E2%9C%93" target="_blank" rel="noopener noreferrer" class="see-more">
+                See more posts
+        </a>
+        </button>
     </div>
-    <button class="see_more">
-        <p class="see_more_text">
-            See more posts
-        </p>
-    </button>
-    
 </body>
